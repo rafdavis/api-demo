@@ -26,6 +26,6 @@ class FaculdadeControllerTest {
     @Test
     void deveRetornarNomeDeAlunoEspecifico() {
         // Teste que verifica se "João Santos" está na lista de alunos
-        assertThat(controller.getAlunos()).contains("Ana Pereira");
+        assertThat(controller.getAlunos()).contains("Testando Erro");
     }
 }
