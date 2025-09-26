@@ -37,3 +37,10 @@ jobs:
     # 3. Executa o build e os testes com Maven
     - name: Build e Testes com Maven
       run: mvn -B package --file pom.xml # O comando 'package' compila e executa os testes
+
+    # Guardar o artefato
+    - name: Upload do Artefato
+      uses: actions/upload-artifact@v4
+      with:
+        name: api-demo-jar # Nome do pacote do artefato
+        path: target/*.jar # Caminho para o arquivo .jar que o Maven gerou
