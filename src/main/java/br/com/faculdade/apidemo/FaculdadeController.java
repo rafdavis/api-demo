@@ -17,12 +17,12 @@ public class FaculdadeController {
     @GetMapping("/cursos")
     @Operation(summary = "Lista todos os cursos disponíveis")
     public List<String> getCursos() {
-        return List.of("Desenvolvimento de Software Multiplataforma", "Gestão Empresarial", "Análise e Desenvolvimento de Sistemas", "Teste");
+        return List.of("Desenvolvimento de Software Multiplataforma", "Gestão Empresarial", "Análise e Desenvolvimento de Sistemas");
     }
 
     @GetMapping("/alunos")
     @Operation(summary = "Lista alguns alunos matriculados")
     public List<String> getAlunos() {
-        return List.of("Maria Silva", "João Santos", "Ana Pereira", "Ricardo Davis");
+        return List.of("Maria Silva", "João Santos", "Ana Pereira", "Ricardo Davis", "Teste");
     }
 }
