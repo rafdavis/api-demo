@@ -23,6 +23,6 @@ public class FaculdadeController {
     @GetMapping("/alunos")
     @Operation(summary = "Lista alguns alunos matriculados")
     public List<String> getAlunos() {
-        return List.of("Maria Silva", "João Santos", "Ana Pereira", "Icaro Davies");
+        return List.of("Maria Silva", "João Santos", "Ana Pereira");
     }
 }
